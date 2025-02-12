@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abdul Fatao Abdulrahman's personal portfolio showcasing skills, projects, and contact info.">
+    <meta name="keywords" content="Abdul Fatao Abdulrahman, web developer, portfolio, projects">
+    <meta name="author" content="Abdul Fatao Abdulrahman">
+
+// linking contact.html to index.html
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Abdul Fatao Abdulrahman's Personal Website</title>
 </head>
+
+
 <body>
     <header class="animate-header">
         <h1>Welcome to Abdul Fatao Abdulrahman's Website</h1>
@@ -16,9 +26,12 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="https://yourblogwebsite.com" target="_blank">Blog</a></li> <!-- External link -->
+
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="about" data-aos="fade-up">
             <h2>About Me</h2>
@@ -27,46 +40,108 @@
                 <p data-aos="fade-left">Hello! I'm Abdul Fatao Abdulrahman. I'm passionate about web development and design.</p>
             </div>
         </section>
+
+
         <section id="projects" data-aos="fade-up">
             <h2>Projects</h2>
+
             <div class="project-grid">
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
                     <img src="images/project1.jpg" alt="Project 1" class="project-image">
                     <h3>Project 1</h3>
                     <p>Description of project 1</p>
                 </div>
+
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
                     <img src="images/project2.jpg" alt="Project 2" class="project-image">
                     <h3>Project 2</h3>
                     <p>Description of project 2</p>
                 </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/project2.jpg" alt="Project 2" class="project-image">
+                    <h3>Project 3</h3>
+                    <p>Description of project 2</p>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/project2.jpg" alt="Project 2" class="project-image">
+                    <h3>Project 4</h3>
+                    <p>Description of project 2</p>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/project2.jpg" alt="Project 2" class="project-image">
+                    <h3>Project 5</h3>
+                    <p>Description of project 2</p>
+                </div>
+
             </div>
         </section>
+
+
+
         <section id="contact" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me!</p>
+            <h2>Contact Me</h2>
+            <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit">Send Message</button>
+            </form>
         </section>
+        
     </main>
+
+
+
     <footer>
         <div class="social-links">
-            <a href="https://linkedin.com/in/your-linkedin" class="social-button linkedin">
-                <i class="fab fa-linkedin"></i>
-                <span>LinkedIn</span>
-            </a>
-            <a href="https://twitter.com/your-twitter" class="social-button twitter">
-                <i class="fab fa-twitter"></i>
-                <span>Twitter</span>
-            </a>
-            <a href="https://github.com/your-github" class="social-button github">
+            <a href="https://github.com/Fatao" class="social-button github">
                 <i class="fab fa-github"></i>
                 <span>GitHub</span>
             </a>
-            <a href="mailto:your.email@example.com" class="social-button email">
+        
+            <a href="https://www.linkedin.com/in/abdul-fatao-abdulrahman-8ab609194/" class="social-button linkedin">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        
+            <a href="mailto:abdulfatoabdulrahman@gmail.com" class="social-button email">
                 <i class="fas fa-envelope"></i>
                 <span>Email</span>
             </a>
+        
+            <a href="https://www.instagram.com/fa.ta_0/" class="social-button instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        
+            <a href="https://tryhackme.com/p/Fatao1" class="social-button tryhackme">
+                <i class="fas fa-user-secret"></i>
+                <span>TryHackMe</span>
+            </a>
+        
+        
+        
+            <a href="https://www.youtube.com/@FATAOS3C" class="social-button youtube">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+        
+            <a href="https://t.me/fatao_dev101" class="social-button telegram">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram</span>
+            </a>
         </div>
-        <p>&copy; 2024 Abdul Fatao Abdulrahman</p>
+        
+        <p>&copy; 2025 Abdul Fatao Abdulrahman</p>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
