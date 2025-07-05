@@ -1,40 +1,83 @@
-// Add your JavaScript code here
-console.log('Welcome to Abdul Fatao Abdulrahman’s personal website!');
+// Welcome banner in console
+console.log(
+  "%c👨‍💻 Welcome to Abdul Fatao Abdulrahman’s personal website!",
+  "color: #39ff14; font-weight: bold; font-family: 'Fira Code', monospace;"
+);
 
 // Initialize AOS (Animate On Scroll)
 AOS.init({
-    duration: 1000,
-    once: true,
-    offset: 100
+  duration: 1000,
+  once: true,
+  offset: 100
 });
 
-// Smooth scrolling for navigation links
+// Smooth scroll for internal navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+  anchor.addEventListener('click', function (e) {
+    const targetId = this.getAttribute('href');
+    const target = document.querySelector(targetId);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
 });
 
-// Add active class to navigation links on scroll
+// Highlight active nav link on scroll
 window.addEventListener('scroll', () => {
-    let current = '';
-    const sections = document.querySelectorAll('section');
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (scrollY >= (sectionTop - sectionHeight / 3)) {
-            current = section.getAttribute('id');
-        }
+  const scrollPos = window.scrollY;
+  const sections = document.querySelectorAll('main section');
+
+  let current = '';
+  sections.forEach(section => {
+    const top = section.offsetTop - 120;
+    const height = section.offsetHeight;
+    if (scrollPos >= top && scrollPos < top + height) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  document.querySelectorAll('nav a').forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').slice(1) === current) {
+      link.classList.add('active');
+    }
+  });
+});
+
+// Handle contact form submission
+document.getElementById("contact-form").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const name = this.name.value.trim();
+  const email = this.email.value.trim();
+  const message = this.message.value.trim();
+  const responseEl = document.getElementById("response");
+
+  if (!name || !email || !message) {
+    responseEl.style.color = "red";
+    responseEl.innerText = "All fields are required.";
+    return;
+  }
+
+  try {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbwRvzjFPKdPGG8fEpLSPQtTQYB4XOK6nRkLA0Gst-xoti2IY2r1JTxk4rwliYWrIfu1/exec", {
+      method: "POST",
+      body: JSON.stringify({ name, email, message }),
+      headers: { "Content-Type": "application/json" }
     });
 
-    document.querySelectorAll('nav a').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
-        }
-    });
+    const data = await res.json();
+    if (data.result === "success") {
+      responseEl.style.color = "green";
+      responseEl.innerText = "✅ Message sent successfully!";
+      this.reset();
+    } else {
+      throw new Error("Unexpected response format.");
+    }
+  } catch (err) {
+    console.error("❌ Form error:", err);
+    responseEl.style.color = "red";
+    responseEl.innerText = "⚠️ Error sending message. Please try again later.";
+  }
 });
