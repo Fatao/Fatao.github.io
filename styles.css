@@ -6,7 +6,7 @@ body {
     color: #e0e0e0;
     background-color: #0d1117;
     overflow-x: hidden;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Header Animation */
@@ -36,7 +36,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 nav a {
@@ -261,7 +261,7 @@ button {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .profile-container {
     flex-direction: column;
     align-items: center;
@@ -318,4 +318,38 @@ button {
 h2 {
   text-align: center;
   font-size: 3em; /* Or try 32px, 3rem, etc. */
+}
+
+nav ul {
+  padding: 1rem 0;
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 480px) {
+  .top-left-banner {
+    width: 60px;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+}
+
+
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #39ff14;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
