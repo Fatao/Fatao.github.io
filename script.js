@@ -49,35 +49,73 @@ window.addEventListener('scroll', () => {
 document.getElementById("contact-form").addEventListener("submit", async function (e) {
   e.preventDefault();
 
-  const name = this.name.value.trim();
-  const email = this.email.value.trim();
-  const message = this.message.value.trim();
+  const form = this;
+  const formData = new FormData(form);
   const responseEl = document.getElementById("response");
-
-  if (!name || !email || !message) {
-    responseEl.style.color = "red";
-    responseEl.innerText = "All fields are required.";
-    return;
-  }
 
   try {
     const res = await fetch("https://script.google.com/macros/s/AKfycbwRvzjFPKdPGG8fEpLSPQtTQYB4XOK6nRkLA0Gst-xoti2IY2r1JTxk4rwliYWrIfu1/exec", {
       method: "POST",
-      body: JSON.stringify({ name, email, message }),
-      headers: { "Content-Type": "application/json" }
+      body: formData
     });
 
     const data = await res.json();
     if (data.result === "success") {
       responseEl.style.color = "green";
       responseEl.innerText = "✅ Message sent successfully!";
-      this.reset();
+      form.reset();
     } else {
-      throw new Error("Unexpected response format.");
+      throw new Error("Unexpected response");
     }
   } catch (err) {
     console.error("❌ Form error:", err);
     responseEl.style.color = "red";
     responseEl.innerText = "⚠️ Error sending message. Please try again later.";
   }
+});
+// Terminal simulation for loading effect
+
+const terminalLines = [
+  "Initializing system scan...",
+  "Target acquired: 192.168.1.1",
+  "System fingerprint matched: localhost",
+  "Launching Nmap aggressive scan...",
+  "Bypassing firewall rules...",
+  "Launching port scan...",
+  "Deploying payloads...",
+  "Dumping credentials...",
+  "Exfiltrating data via covert channel...",
+  "Leaving no logs behind...",
+  "Bootstrapping post-exploit toolkit...",
+  "Root shell initialized.",
+  "Session persisted.",
+  "Access granted. Welcome to my Digital Space ! ! !"
+];
+
+const terminalEl = document.getElementById("terminal");
+const overlay = document.getElementById("terminal-overlay");
+const mainContent = document.getElementById("main-content");
+let line = 0;
+
+function typeLine(text, i = 0) {
+  if (i < text.length) {
+    terminalEl.innerHTML += text.charAt(i);
+    setTimeout(() => typeLine(text, i + 1), 30);
+  } else {
+    terminalEl.innerHTML += "<br>";
+    line++;
+    if (line < terminalLines.length) {
+      setTimeout(() => typeLine(terminalLines[line]), 5); // 1s delay between lines
+    } else {
+      // Finished: Hide overlay, show site
+      setTimeout(() => {
+        overlay.style.display = "none";
+        mainContent.style.display = "block";
+      }, 2000);
+    }
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  typeLine(terminalLines[line]);
 });

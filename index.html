@@ -23,6 +23,11 @@
 
 <body>
 
+    <!-- Terminal Popup Overlay -->
+<div id="terminal-overlay">
+  <div id="terminal" class="terminal-ui glitch"></div>
+</div>
+
     <header class="animate-header">
 
   <h1>👨‍💻 Abdulrahman Fatao 👨‍💻</h1>
@@ -43,9 +48,16 @@
 
     <main>
         
+        
         <section id="about" data-aos="fade-up">
         <h2>About Me </h2>
+
+
+
         <div class="profile-container">
+            
+
+
         <div class="profile-text" data-aos="fade-left">
             <p style="color: #00ffcc; font-family: monospace;">
   <span style="color: #39ff14;">fatao@localhost:~#</span> whoami<br>
@@ -65,96 +77,106 @@
     </p>
   
 
-  <h3>🎯 My Interests & Hobbies</h3>
-  <ul>
-    <li>👨‍💻 Programming</li>
-    <li>✍️ Writing</li>
-    <li>🧠 Technology</li>
-    <li>🏋️‍♂️ Fitness & Gym</li>
-    <li>🤸 Calisthenics</li>
-    <li>⚽ Football</li>
-    <li>♟️ Chess</li>
-  </ul>
-
-  <h3>🧰 Skills</h3>
-  <ul>
-    <li>🐧 Linux</li>
-    <li>🔐 Cyber Security Basics</li>
-    <li>🌐 Networking Basics</li>
-    <li>🛡️ Risk Treatment</li>
-    <li>🚨 Incident Response</li>
-    <li>🗃️ Git & GitHub</li>
-  </ul>
-
-  <h3>🛠️ Security & Dev Toolset</h3>
-  <ul>
-    <li>🎯 Metasploit</li>
-    <li>📡 Nmap</li>
-    <li>🔍 Wireshark</li>
-    <li>🕷️ Nikto</li>
-    <li>💉 SQLMap</li>
-    <li>🧪 Burp Suite</li>
-    <li>🔓 WPScan</li>
-  </ul>
-
-
+   <!-- Interests / Skills / Tools -->
+            <div class="about-columns">
+              <div class="card fade-in">
+                <h3>🎯 My Interests & Hobbies</h3>
+                <ul>
+                  <li>👨‍💻 Programming</li>
+                  <li>🧠 Technology</li>
+                  <li>⚽ Football</li>
+                  <li>🍳 Cooking</li>
+                  <li>🎮 Gaming</li>
+                  <li>📚 Reading</li>
+                  <li>✍️ Writing</li>
+                  <li>🏋️‍♂️ Fitness & Gym</li>
+                  <li>🤸 Calisthenics</li>
+                  <li>📷 Photography & Visuals</li>
+                </ul>
+              </div>
+              <div class="card fade-in">
+                <h3>🧰 Skills</h3>
+                <ul>
+                  <li>🐧 Linux</li>
+                  <li>📂 Windows</li>
+                  <li>🔐 Cyber Security Basics</li>
+                  <li>🌐 Networking Basics</li>
+                  <li>🐍 Basic Scripting</li>
+                  <li>🧩 Front-End Basics</li>
+                  <li>🛡️ Risk Treatment</li>
+                  <li>🚨 Incident Response</li>
+                  <li>🗃️ Version Control</li>
+                </ul>
+              </div>
+              <div class="card fade-in">
+                <h3>🛠️ Security & Dev Toolset</h3>
+                <ul>
+                  <li>📝 VS Code</li>
+                  <li>🌐 Git & GitHub</li>
+                  <li>📦 VirtualBox</li>
+                  <li>🎯 Metasploit</li>
+                  <li>📡 Nmap</li>
+                  <li>🔍 Wireshark</li>
+                  <li>🕷️ Nikto</li>
+                  <li>💉 SQLMap</li>
+                  <li>🧪 Burp Suite</li>
+                  <li>🔓 WPScan</li>
+                </ul>
+              </div>
+            </div>
+    
 </div> <!-- close profile-text --> 
 </div> <!-- close profile-container -->
         </section>
 
 
-        <section id="projects" data-aos="fade-up">
-            <h2>Projects 🛠</h2>
-
-            <div class="project-grid">
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="images/project1.jpg" alt="Project 1" class="project-image">
-                    <h3>Cyber Fortress Lab</h3>
-                    <p>Description of project 1</p>
-                    <a href="#">View Project</a>
-                </div>
-
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="images/project2.jpg" alt="Project 2" class="project-image">
-                    <h3>🔍 TryHackMe SOC Level 1 Simulator</h3>
-                    <p>A hands-on simulation of real-time SOC alerts and blue team operations. 
-                    Investigated phishing, malware, and network-based threats using tools like Splunk, Sigma, and Wireshark.</p>
-                   
-                    <ul>
-    <li>✅ Live Splunk log analysis</li>
-    <li>📊 IOC extraction + MITRE ATT&CK mapping</li>
-    <li>🧾 Realistic incident report documentation</li>
-    <li>⚡ Real-time alert triage and response</li>
-  </ul>
-    <a href="https://github.com/Fatao/SOC-Level1-Simulator" target="_blank" class="btn">🔗 View Project</a>
-</div>
-        
-
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="images/project3.jpg" alt="Project 3" class="project-image">
-                    <h3>ThreatHunterX </h3>
-                    <p>Real-world threat hunting simulator with attack chain mapping, hypothesis testing, and AI-generated reports.</p>
-                    <a href="https://github.com/Fatao/ThreatHunterX" target="_blank">🔗 View Project</a>
-                </div>
-
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="images/project4.jpg" alt="Project 4" class="project-image">
-                    <h3>PassGuard Generator</h3>
-                    <p>Description of project 2</p>
-                    <a href="#">View Project</a>
-                </div>
-
-                
-                    <div class="project-card">
-  <img src="images/project5.jpg" alt="Restaurant-Website" class="project-image">
-  <h3>Gourmet Haven</h3>
-  <p>A modern and responsive restaurant website.</p>
-  <a href="https://github.com/Fatao/Restaurant-Website" target="_blank">View Project</a>
-</div>
-
-
-            </div>
-        </section>
+       <section id="projects" data-aos="fade-up">
+        <h2>Projects 🛠</h2>
+        <div class="project-grid">
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+            <img src="images/project1.jpg" alt="Project 1" class="project-image">
+            <h3>Cyber Fortress Lab</h3>
+            <p>Description of project 1</p>
+            <a href="https://github.com/Fatao/SOC-Level1-Simulator" target="_blank" class="btn">🔗 View Project</a>
+          </div>
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/project2.jpg" alt="Project 2" class="project-image">
+            <h3>🔍 TryHackMe SOC Level 1 Simulator</h3>
+            <p>A hands-on simulation of real-time SOC alerts and blue team operations. Investigated phishing, malware, and network-based threats using tools like Splunk, Sigma, and Wireshark.</p>
+            <ul>
+              <li>✅ Live Splunk log analysis</li>
+              <li>📊 IOC extraction + MITRE ATT&CK mapping</li>
+              <li>🧾 Realistic incident report documentation</li>
+              <li>⚡ Real-time alert triage and response</li>
+            </ul>
+            <a href="https://github.com/Fatao/SOC-Level1-Simulator" target="_blank" class="btn">🔗 View Project</a>
+          </div>
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/project3.jpg" alt="Project 3" class="project-image">
+            <h3>ThreatHunterX</h3>
+            <p>Real-world threat hunting simulator with attack chain mapping, hypothesis testing, and AI-generated reports.</p>
+            <a href="https://github.com/Fatao/ThreatHunterX" target="_blank" class="btn">🔗 View Project</a>
+          </div>
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/project4.png" alt="Project 4" class="project-image">
+            <h3>PassGuard Generator</h3>
+            <p>Description of project 2</p>
+            <a href="https://github.com/Fatao/SOC-Level1-Simulator" target="_blank" class="btn">🔗 View Project</a>
+          </div>
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/project5.jpg" alt="Restaurant-Website" class="project-image">
+            <h3>Gourmet Haven</h3>
+            <p>A modern and responsive restaurant website.</p>
+            <ul>
+              <li>🍽️ Elegant design with smooth animations</li>
+              <li>📱 Fully responsive for all devices</li>
+              <li>🗺️ Interactive menu and reservation system</li>
+              <li>📸 High-quality images showcasing dishes</li>
+            </ul>
+            <a href="https://github.com/Fatao/Restaurant-Website" target="_blank" class="btn">🔗 View Project</a>
+          </div>
+        </div>
+      </section>
 
 
 
@@ -198,20 +220,26 @@
             </a>
         
             
-        
             <a href="https://tryhackme.com/p/Fatao1" class="social-button tryhackme">
                 <i class="fas fa-user-secret"></i>
                 <span>TryHackMe</span>
             </a>
         
+           <a href="https://t.me/fatao_dev101" class="social-button telegram" target="_blank">
+  <i class="fab fa-telegram-plane"></i>
+  <span>Telegram</span>
+</a>
+
         
         
 
         </div>
-         <p>© 2025 Abdulrahman Fatao. Built with ❤</p>
+
+        <p>© 2025 Abdulrahman Fatao. All Rights Reserved. Built with ❤</p>
+         <p>Developed & Designed by Abdulrahman Fatao</p>
        
 
-         <a href="https://t.me/fatao_dev101"> Chat 💬 on Telegram </a>
+        
 
     </footer>
 
