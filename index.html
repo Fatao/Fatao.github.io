@@ -1,215 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Abdul Fatao Abdulrahman's personal portfolio showcasing skills, projects, and contact info.">
     <meta name="keywords" content="Abdul Fatao Abdulrahman, web developer, portfolio, projects">
     <meta name="author" content="Abdul Fatao Abdulrahman">
-    <title>Abdul Fatao Abdulrahman's Dev Portfolio</title>
+    <title> My Portfolio </title>
 
 
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+
 
 </head>
+<body>  
+  <header class="site-header">
+  <div class="logo">&lt;/FATAO&gt;</div>
 
 
-<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="https://medium.com/@fatao" target="_blank">BLOGPOSTS</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- Terminal Popup Overlay -->
-<div id="terminal-overlay">
-  <div id="terminal" class="terminal-ui glitch"></div>
-</div>
+<section class="hero" id="home">
+  <div class="hero-container">
 
-    <header class="animate-header">
+    <!-- LEFT -->
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Abdulrahman Fatao">
+    </div>
 
-  <h1>👨‍💻 Abdulrahman Fatao 👨‍💻</h1>
-  <h1 class="typewriter"></h1>Student SE | SOC Analyst Jnr | InfoSec and Tech enthusiast.</p>
+    <!-- RIGHT -->
+    <div class="hero-content">
 
+      <p class="welcome-text">
+        <b>
+        Hello 👋! Welcome to my digital workspace 👨‍💻🛡️<br><br>
+        I’m Fatao — 
+        <strong class="glitch" data-text="THE VIGILANT GUY">
+          THE VIGILANT GUY
+        </strong><br>
+        Not the villain, but the watcher in the wires 👁️🕸️<br>
+        An infosec enthusiast 🛡️ chasing that perfect blend of
+        curiosity 🧠 and chaos 🔥 </b>
+      </p>
 
-        <nav>
-            <ul>
-                
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACTS</a></li>
-                <li><a href="https://medium.com/@fatao" target="_blank">MY BLOG</a></li> <!-- External link -->
+      <!-- BADGES UNDER TEXT -->
+      <div class="badges-section">
+        <div class="badges-container">
+          <iframe 
+            src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=755798" 
+            style='border:none;'
+            class="tryhackme-badge">
+          </iframe>
 
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        
-        
-        <section id="about" data-aos="fade-up">
-        <h2>About Me </h2>
-
-
-
-        <div class="profile-container">
-            
-
-
-        <div class="profile-text" data-aos="fade-left">
-            <p style="color: #00ffcc; font-family: monospace;">
-  <span style="color: #39ff14;">fatao@localhost:~#</span> whoami<br>
-</p>
-     <p> Hello 👋! I'm Fatao — <strong class="glitch" data-text="THE VIGILANT GUY">THE VIGILANT GUY</strong>
- 🕶️💻<br>
-    Not the villain, but the watcher in the wires 👁️🕸️<br>
-    An infosec enthusiast 🛡️ chasing that perfect blend of curiosity 🧠 and chaos 🔥<br>
-    You’ll usually find me working 💼, studying 📚, reading 📖,  
-    watching football ⚽ or documentaries 🎥 —<br>
-    or getting my hands dirty in <strong>KALI</strong> 🐉 and <strong>TERMUX</strong> 📱,  
-    where the real magic happens ✨👨‍💻 <br>
-    <strong style="color: #39ff14;" class="blink-cursor">
-  "Stay curious, keep exploring and do things differently! 🚀🌟"
-</strong>
-
-    </p>
-  
-
-   <!-- Interests / Skills / Tools -->
-            <div class="about-columns">
-              <div class="card fade-in">
-                <h3>🎯 My Interests & Hobbies</h3>
-                <ul>
-                  <li>👨‍💻 Programming</li>
-                  <li>🧠 Technology</li>
-                  <li>⚽ Football</li>
-                  <li>🍳 Cooking</li>
-                  <li>🎮 Gaming</li>
-                  <li>📚 Reading</li>
-                  <li>✍️ Writing</li>
-                  <li>🏋️‍♂️ Fitness & Gym</li>
-                  <li>🤸 Calisthenics</li>
-                  <li>📷 Photography & Visuals</li>
-                </ul>
-              </div>
-              <div class="card fade-in">
-                <h3>🧰 Skills</h3>
-                <ul>
-                  <li>🐧 Linux</li>
-                  <li>📂 Windows</li>
-                  <li>🔐 Cyber Security Basics</li>
-                  <li>🌐 Networking Basics</li>
-                  <li>🐍 Basic Scripting</li>
-                  <li>🧩 Front-End Basics</li>
-                  <li>🛡️ Risk Treatment</li>
-                  <li>🚨 Incident Response</li>
-                  <li>🗃️ Version Control</li>
-                </ul>
-              </div>
-              <div class="card fade-in">
-                <h3>🛠️ Security & Dev Toolset</h3>
-                <ul>
-                  <li>📝 VS Code</li>
-                  <li>🌐 Git & GitHub</li>
-                  <li>📦 VirtualBox</li>
-                  <li>🎯 Metasploit</li>
-                  <li>📡 Nmap</li>
-                  <li>🔍 Wireshark</li>
-                  <li>🕷️ Nikto</li>
-                  <li>💉 SQLMap</li>
-                  <li>🧪 Burp Suite</li>
-                  <li>🔓 WPScan</li>
-                </ul>
-              </div>
-            </div>
-    
-</div> <!-- close profile-text --> 
-</div> <!-- close profile-container -->
-        </section>
-
-
-       <section id="projects" data-aos="fade-up">
-        <h2>Projects 🛠</h2>
-        <div class="project-grid">
-          <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-            <img src="images/project1.jpg" alt="Project 1" class="project-image">
-            <h3>Fantom-Forge-101 — Personal Cybersecurity Home lab</h3>
-            <p>Fantom-Forge-101 is my controlled cyber battlefield for learning both offensive and defensive techniques. 
-            The lab is designed around strict isolation and repeatability: each scenario includes goals, a safe checklist, 
-             and checkpoints for documenting detection and remediation. The repository contains setup guides, network diagrams,
-             and scenario playbooks so others can reproduce the environment responsibly.</p>
-
-              
-            <a href="https://github.com/Fatao/SOC-Level1-Simulator" target="_blank" class="btn">🔗 View Project</a>
+          <div
+            data-iframe-width="150"
+            data-iframe-height="270"
+            data-share-badge-id="7f856502-72e0-425b-b921-dc7d92c077a1"
+            data-share-badge-host="https://www.credly.com">
           </div>
-          <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-            <img src="images/project2.jpg" alt="Project 2" class="project-image">
-            <h3>🔍 TryHackMe SOC Level 1 Simulator</h3>
-            <p>A hands-on simulation of real-time SOC alerts and blue team operations. Investigated phishing, malware, and network-based threats using tools like Splunk, Sigma, and Wireshark.</p>
-            <ul>
-              <li>✅ Live Splunk log analysis</li>
-              <li>📊 IOC extraction + MITRE ATT&CK mapping</li>
-              <li>🧾 Realistic incident report documentation</li>
-              <li>⚡ Real-time alert triage and response</li>
-            </ul>
-
-              
-            <a href="https://github.com/Fatao/SOC-Level1-Simulator" target="_blank" class="btn">🔗 View Project</a>
-          </div>
-          <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-            <img src="images/project3.jpg" alt="Project 3" class="project-image">
-            <h3>ThreatHunterX</h3>
-            <p>Real-world threat hunting simulator with attack chain mapping, hypothesis testing, and AI-generated reports.</p>
-            <a href="https://github.com/Fatao/ThreatHunterX" target="_blank" class="btn">🔗 View Project</a>
-          </div>
-          <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-            <img src="images/project4.png" alt="Project 4" class="project-image">
-            <h3>PassGuard Generator</h3>
-            <p>Description of project 2</p>
-            <a href="https://github.com/Fatao/SOC-Level1-Simulator" target="_blank" class="btn">🔗 View Project</a>
-          </div>
-          <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-            <img src="images/project5.jpg" alt="Restaurant-Website" class="project-image">
-            <h3>Gourmet Haven</h3>
-            <p>A modern and responsive restaurant website.</p>
-            <ul>
-              <li>🍽️ Elegant design with smooth animations</li>
-              <li>📱 Fully responsive for all devices</li>
-              <li>🗺️ Interactive menu and reservation system</li>
-              <li>📸 High-quality images showcasing dishes</li>
-            </ul>
-            <a href="https://github.com/Fatao/Restaurant-Website" target="_blank" class="btn">🔗 View Project</a>
-          </div>
+          <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         </div>
-      </section>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
 
 
 
-        <section id="contact" data-aos="fade-up">
-            <h2>Contact Me 📬</h2>
+<!-- About Section    -->
 
-            <form id="contact-form">
-  <input type="text" name="name" placeholder="Your Name" required><br>
-  <input type="email" name="email" placeholder="Your Email" required><br>
-  <textarea name="message" placeholder="Your Message" rows="6" required></textarea><br>
+<section id="about">
+  <h2>About Me</h2>
 
+<!-- Profile Image -->
+    <div class="profile-container">
+      <div class="profile-image-container">
+        <img src="images/about.jpg" alt="Abdulrahman Fatao" class="profile-image">
+      </div>
+
+      <div class="profile-text">
+        
+        <p style="color: #00ffcc; font-family: monospace;">
+  <span style="color: #39ff14;">fatao@localhost:~#</span> whoami<br>
+      </p>
+
+  <p>
+  I’m Abdulrahman Fatao, a software engineering student and a passionate InfoSec and tech enthusiast
+   with a passion for learning, 
+  exploring new things, and making technology safer and more useful. 
+  I’m  interested in defensive security, threat detection, and real-world incident response.
   
+
+  You’ll usually find me working 💼, studying 📚, reading 📖,  
+  watching football ⚽ or documentaries 🎥 —<br>
+  or getting my hands dirty in <strong>KALI</strong> 🐉 and <strong>TERMUX</strong> 📱,  
+  where the real magic happens ✨👨‍💻<br><br>
+  
+  I enjoy staying up-to-date with the latest trends in technology, science, sports, and pop culture.
+  I’m always looking for opportunities to expand my knowledge and skills.
+
+ <strong class="blink-cursor" style="color: #39ff14;">
+    “Stay curious, keep exploring and do things differently!"  " 🚀
+  </strong>
+
+  </p>
+</div>
+</div>
+<section>
+  <h3 style="color: green; text-align: center;">Purpose & Vision</h3>
+<p style="text-align: justify;">
+  My purpose is to understand how systems fail, how attacks unfold,
+  and how to defend against them effectively.
+  My vision is to grow into a skilled security professional who contributes
+  to building resilient systems and safer digital environments.
+</p>
+
+
+
+<h3 style="color: green; text-align: center;">Core Values</h3>
+<p style="text-align: justify;">
+  I live by these core values: <br>
+
+<strong> Curiosity</strong> - The drive  that pushes me to explore, learn, and look deeper into how things work.<br>
+<strong > Discipline </strong> - The value that keeps me moving forward. It’s my  commitment to consistency and self-control<br>
+<strong> Integrity</strong> - Integrity is what I believe defines a person, and I strive to live by this principle every day.<br>
+<strong> Security Mindset </strong> - I always think aboyt protecting people, system and data by being proactive and staying vigilant <br> <br>
+
+
+
+  These principles guide my approach to learning, problem-solving,
+  and professional growth in the tech and security space.
+</p>
+
+
+<h3 style="color: green; text-align: center;">Social Life & Growth</h3>
+<p style="text-align: justify;">
+  I believe growth doesn’t happen in isolation.
+  I value collaboration, mentorship, and learning from people with different perspectives.
+  Outside tech, I stay active, grounded, and curious about the world.
+</p>
+ 
+
+
+<!-- Interests / Skills / Tools -->
+<section id="interests" class="interests-section">
+  <h2 class="section-title"> <strong>Interests • Skills • Tools</strong></h2>
+
+  <div class="interests-grid">
+
+    <!-- Interests -->
+    <div class="interest-card">
+      <h3>🧠 Interests</h3>
+      <ul>
+        <li>Cybersecurity & Threat Hunting</li>
+        <li>SOC Operations & Incident Response</li>
+        <li>Ethical Hacking & CTFs</li>
+        <li>Digital Privacy & OSINT</li>
+        <li>Technology, Research & Continuous Learning</li>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="interest-card">
+      <h3>⚙️ Skills</h3>
+      <ul>
+        <li>Security Monitoring & Log Analysis</li>
+        <li>Networking Fundamentals (TCP/IP, DNS, HTTP)</li>
+        <li>Linux System Administration</li>
+        <li>Basic Malware & Phishing Analysis</li>
+        <li>Web Fundamentals (HTML, CSS, JavaScript)</li>
+      </ul>
+    </div>
+
+    <!-- Tools -->
+    <div class="interest-card">
+      <h3>🛠️ Tools</h3>
+      <ul class="tools-list">
+        <li>Kali Linux</li>
+        <li>TryHackMe</li>
+        <li>Wireshark</li>
+        <li>Nmap</li>
+        <li>Burp Suite</li>
+        <li>Metasploit</li>
+        <li>Termux</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+</section>
+
+
+
+<!-- Projects Section -->
+<section id="projects">
+  
+  <h2>Projects</h2>
+    <div class="projects-container">
+
+   <div class="project">
+    <div class="project-header">
+      <h3> Fantom-Forge-101-Personal-Cybersecurity-Home-lab </h3>
+      <img src="documents/project4.png" alt="voiceID" class="project-image">
+      </div>  
+       <p class="project-description"> 
+        A small, isolated VirtualBox home lab for learning offensive & defensive security. 
+        A VirtualBox-based home lab built to learn, simulate, and document attack/defense scenarios. 
+        I use Kali, Windows Server, and intentionally vulnerable applications to practice threat hunting, incident response, 
+        and secure configuration — all inside an isolated environment.
+      
+      </p>
+         <div class="project-links"></div>
+      <a href="https://github.com/Fatao/Fantom-Forge-101-Personal-Cybersecurity-Home-lab" class="project-link" target="_blank">View Project</a>
+    </div>
+
+
+
+  <div class="project">
+    <div class="project-header">
+      <h3> Virtual-Network-Traffic-Analysis-LabVirtual-Network-Traffic-Analysis-Lab </h3>
+      <img src="documents/project4.png" alt="voiceID" class="project-image">
+      </div>  
+       <p class="project-description"> 
+        Threat hunting simulator with attack-chain mapping.</p>
+         <div class="project-links"></div>
+      <a href="#" class="project-link" target="_blank"> View Project</a>
+    </div>
+
+
+
+  <div class="project">
+    <div class="project-header">
+      <h3> Phishing-Simulation-and-SOC-Detection-Lab </h3>
+      <img src="documents/project4.png" alt="voiceID" class="project-image">
+      </div>  
+       <p class="project-description"> 
+        Threat hunting simulator with attack-chain mapping.</p>
+         <div class="project-links"></div>
+      <a href="#" class="project-link" target="_blank">View Project</a>
+    </div>
+
+
+
+  <div class="project">
+    <div class="project-header">
+      <h3> Threat-HunterX-Lab </h3>
+        <img src="documents/project4.png" alt="voiceID" class="project-image">
+      </div>  
+       <p class="project-description"> 
+        Threat hunting simulator with attack-chain mapping.</p>
+         <div class="project-links"></div>
+      <a href="#" class="project-link" target="_blank">View Project</a>
+    </div>
+
+
+
+  <div class="project">
+    <div class="project-header">
+      <h3> Identify and Mitigate a Cross Site Scripting (XSS) Vulnerability.</h3>
+        <img src="documents/xss.jpg" alt="voiceID" class="project-image">
+      </div>  
+       <p class="project-description"> 
+        This project aimed to identify and mitigate an XSS vulnerability in a simulated feedback form. 
+        Using Burp Suite Professional and the PortSwigger lab "Reflected XSS into HTML context with nothing encoded," 
+        the vulnerability was successfully exploited and recommendations were made.
+        Recommendations include input sanitization, output encoding, and Content Secunty Policy (CSP) implementation.
+      </p>
+         <div class="project-links"></div>
+      <a href="#" class="project-link" target="_blank">View Project</a>
+    </div>
+
+
+  <div class="project">
+    <div class="project-header">
+      <h3> SOC-L1-Simulator-Lab - TryHackMe  </h3>
+        <img src="documents/project4.png" alt="voiceID" class="project-image">
+      </div>  
+       <p class="project-description"> 
+        Threat hunting simulator with attack-chain mapping.</p>
+         <div class="project-links"></div>
+      <a href="#" class="project-link" target="_blank">View Project</a>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<!-- Contact Section -->
+
+<section id="contact">
+  <h2>Contact</h2>
+  <!-- In your Contact section -->
+<form id="contact-form">
+  <input type="text" name="from_name" placeholder="Your Name" required>
+  <input type="email" name="from_email" placeholder="your@email.com" required>
+  <textarea name="message" placeholder="Your message..." required></textarea>
   <button type="submit">Send Message</button>
 </form>
-
-<div id="response"></div>
-
-            
-        </section>
-        
-    </main>
+<div id="success-message" style="display: none; margin-top: 1rem; color: var(--accent); text-align: center;">
+  Thanks for reaching out! 😊 I've noted your query and will get back to you soon!
+</div>
+</section>
 
 
 
-    <footer>
-        <h2>Connect With Me</h2>
+
+<!-- Footer -->
+
+
+ <footer class="footer">
+
+  <h3>Connect With Me</h3>
         <div class="social-links">
             <a href="https://github.com/Fatao" class="social-button github">
                 <i class="fab fa-github"></i>
@@ -225,12 +348,18 @@
                 <i class="fas fa-envelope"></i>
                 <span>Email</span>
             </a>
+
+            <a href="https://www.instagram.com/fa.ta_0?igsh=MWk2MXZnaDJ6MnRsdQ==" class="social-button instagram" target="_blank"> 
+              <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
         
             
-            <a href="https://tryhackme.com/p/Fatao1" class="social-button tryhackme">
-                <i class="fas fa-user-secret"></i>
-                <span>TryHackMe</span>
+            <a href="https://discord.com/users/fataoa" class="social-button discord" target="_blank">
+          <i class="fab fa-discord"></i>  <!-- Better: Official Discord icon -->
+            <span>Discord</span>
             </a>
+
         
            <a href="https://t.me/fatao_dev101" class="social-button telegram" target="_blank">
   <i class="fab fa-telegram-plane"></i>
@@ -242,16 +371,20 @@
 
         </div>
 
-        <p>© 2025 Abdulrahman Fatao. All Rights Reserved. Built with ❤</p>
-         <p>Developed & Designed by Abdulrahman Fatao</p>
        
+  <p>&copy; 2026 <strong>Abdulrahman Fatao</strong>. All Rights Reserved.</p>
+  <p> Developed & Designed by  <a href="https://t.me/fatao_dev101" target="_blank" class="footer-link">
+    Fatao
+  </a>
+<p>Built with ❤️ </p>
 
-        
+</footer>
 
-    </footer>
 
-    
+    <script src="form.js" defer></script>
+    <script src="main.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 </body>
 </html>
